@@ -1,7 +1,7 @@
 interface Order {
 	id: number;
 	date: Date;
-	status: String;
+	status: string;
 	items: OrderItem[];
 	total: number;
 }

@@ -1,10 +1,10 @@
 interface Product {
 	id: number;
-	name: String;
-	description: String;
+	name: string;
+	description: string;
 	price: number;
 	stock: number;
-	image: String;
+	image: string;
 	category: Category;
 }
  
