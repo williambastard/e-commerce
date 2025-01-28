@@ -25,5 +25,8 @@ class User implements UserInterface {
 		this.lastnames = lastnames;
 		this.email = email;
 		this.birthdate = birthdate;
+		return this;
 	}
 }
+
+export default User;

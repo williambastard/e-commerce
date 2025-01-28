@@ -1,3 +1,5 @@
+import User from "./User";
+
 interface Customer extends User {
 	phone: String;
 	address: String;
