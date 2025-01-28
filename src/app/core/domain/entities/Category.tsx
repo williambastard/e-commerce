@@ -1,7 +1,7 @@
 interface Category {
 	id: number;
-	name: String;
-	description: String;
-	image: String;
+	name: string;
+	description: string;
+	image: string;
 	products: Product[];
 }

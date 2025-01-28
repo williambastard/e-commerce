@@ -1,23 +1,23 @@
 interface UserInterface {
 	id: number;
-	firstnames: String;
-	lastnames: String;
-	email: String;
+	firstnames: string;
+	lastnames: string;
+	email: string;
 	birthdate: Date;
 }
 
 class User implements UserInterface {
 	id: number;
-	firstnames: String;
-	lastnames: String;
-	email: String;
+	firstnames: string;
+	lastnames: string;
+	email: string;
 	birthdate: Date;
 
 	constructor(
 		id: number,
-		firstnames: String,
-		lastnames: String,
-		email: String,
+		firstnames: string,
+		lastnames: string,
+		email: string,
 		birthdate: Date
 	) {
 		this.id = id;

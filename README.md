@@ -45,3 +45,11 @@
 *tests*: Tests unitaires et d'intégration.
 
 *utils*: Fonctions utilitaires et helpers.
+
+## Types de tâches:
+
+*feature*: Nouvelle fonctionnalité.
+*bugfix*: Correction de bug.
+*chore*: Tâche de maintenance ou d'amélioration.
+*hotfix*: Correction urgente d'un bug en production.
+*release*: Branche pour une version spécifique.
