@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dossiers dans une Clean Architecture avec Next.js > 13
+## Dossiers principaux:
 
-## Getting Started
+*app*: Racine de votre application. Contient tous les fichiers, y compris les routes, les composants, les styles, etc.
 
-First, run the development server:
+*core*: Logique métier pure et indépendante du framework.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*domain*: Définition des objets métier, règles métier et cas d'utilisation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*entities*: Objets métier (ex: User, Product).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*use-cases*: Actions sur les entités (ex: CreateUser, GetProduct).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*ports*: Interfaces pour les dépendances externes (ex: IUserRepository).
 
-## Learn More
+*application*: Logique applicative (contrôleurs et services).
 
-To learn more about Next.js, take a look at the following resources:
+*controllers*: Gestion des requêtes et appels aux use-cases.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*services*: Services applicatifs (ex: authentification).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+*infrastructure*: Implémentations des dépendances externes.
 
-## Deploy on Vercel
+*repositories*: Accès aux données (ex: UserRepository).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*services*: Services externes (ex: envoi d'emails).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*ui*: Composants de l'interface utilisateur et vues.
+
+*components*: Composants React réutilisables.
+
+*commons*: Composants génériques (ex: Button).
+
+*features*: Composants spécifiques à une fonctionnalité.
+
+*views*: Pages et écrans de l'application.
+
+*api*: Routes de l'API (fichiers route.ts).
+
+## Dossiers optionnels:
+*public*: Fichiers statiques (images, polices).
+
+*styles*: Fichiers CSS globaux.
+
+*tests*: Tests unitaires et d'intégration.
+
+*utils*: Fonctions utilitaires et helpers.
