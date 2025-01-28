@@ -7,3 +7,4 @@ interface Product {
 	image: String;
 	category: Category;
 }
+ 
