@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 import { productInterface } from "@/data/productInterface";
 import ProductSkeleton from "./productSkeleton";
 
@@ -11,24 +11,6 @@ export function ProductCard({
   product: productInterface;
   isLoading: boolean;
 }) {
-  const [showContent, setShowContent] = useState(false); // Contrôle l'affichage du contenu
-
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-
-    if (isLoading) {
-      // Si les données sont en cours de chargement
-      setShowContent(false); // Réinitialise l'affichage du contenu
-    } else if (product) {
-      // Si les données sont arrivées
-      timer = setTimeout(() => {
-        setShowContent(true);
-      }, 2000);
-    }
-
-    return () => clearTimeout(timer);
-  }, [product, isLoading]); // Dépendance de isLoading
-
   if (isLoading) {
     // Affiche directement le squelette pendant le chargement initial
     return <ProductSkeleton />;
