@@ -23,7 +23,7 @@ function Page() {
       headers: headers,
     };
 
-    fetch("http://localhost:3002/api/products", mergedOptions) // No async keyword here
+    fetch("./assets/jsons/products.json", mergedOptions) // No async keyword here
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -31,8 +31,9 @@ function Page() {
         return response.json();
       })
       .then((data) => {
+        console.log("Data fetched:", data);
         setTimeout(() => {
-          setProducts(data.data);
+          setProducts(data);
           setIsLoading(false);
         }, 5000);
       })
