@@ -1,57 +1,50 @@
-import { AppSidebar } from "@/components/sink/app-sidebar";
-import { NavigationMenuDemo } from "@/components/sink/navigation-menu-demo";
-import {
-	Breadcrumb,
-	BreadcrumbItem,
-	BreadcrumbLink,
-	BreadcrumbList,
-	BreadcrumbPage,
-	BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Separator } from "@/components/ui/separator";
-import {
-	SidebarInset,
-	SidebarProvider,
-	SidebarTrigger,
-} from "@/components/ui/sidebar";
+// app/page.js (Client Component) - Keep "use client"
+"use client";
 
-export default function Home() {
-	return (
-		<SidebarProvider>
-			<AppSidebar />
-			<SidebarInset>
-				<header className="flex h-16 shrink-0 items-center gap-2 border-b transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
-					<div className="flex items-center gap-2 px-4 w-full">
-						<SidebarTrigger className="-ml-1" />
-						<Separator
-							orientation="vertical"
-							className="mr-2 h-4"
-						/>
-						<NavigationMenuDemo />
-					</div>
-				</header>
-				<div className="hidden md:block">
-					<div className="flex h-16 shrink-0 items-center gap-2 border-b transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
-						<Breadcrumb className="flex items-center gap-2 px-4 w-full">
-							<BreadcrumbList>
-								<BreadcrumbItem>
-									<BreadcrumbLink href="#">
-										Building Your Application
-									</BreadcrumbLink>
-								</BreadcrumbItem>
-								<BreadcrumbSeparator />
-								<BreadcrumbItem>
-									<BreadcrumbPage>
-										Data Fetching
-									</BreadcrumbPage>
-								</BreadcrumbItem>
-							</BreadcrumbList>
-						</Breadcrumb>
-					</div>
-				</div>
+import { useEffect, useState } from "react";
+import { ProductCard } from "@/app/components/tests/product";
+import { productInterface } from "@/boite-a-outils/data/productInterface";
+import ProductSkeleton from "@/app/components/tests/productSkeleton";
 
-				<main className="flex flex-1 flex-col gap-4 p-4"></main>
-			</SidebarInset>
-		</SidebarProvider>
-	);
+function Page() {
+  const [products, setProducts] = useState<productInterface[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("./assets/jsons/products.json") // No async keyword here
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setTimeout(() => {
+          setProducts(data);
+          setIsLoading(false);
+        }, 5000);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        setIsLoading(false);
+      });
+  });
+
+  if (isLoading) {
+    return <ProductSkeleton />; // Or your skeleton component
+  }
+
+  return (
+    <div className="flex flex-row flex-wrap items-start items-stretch justify-start sm:flex-row">
+      {products.map((product: productInterface) => (
+        <ProductCard
+          key={product.productId}
+          product={product}
+          isLoading={isLoading}
+        />
+      ))}
+    </div>
+  );
 }
+
+export default Page;
