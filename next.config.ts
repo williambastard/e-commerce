@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
       {
         hostname: "images.unsplash.com",
       },
+      {
+        hostname: "cdn.sanity.io",
+      },
+      {
+        hostname: "*.cloudfront.net",
+      },
+      {
+        hostname: "fakestoreapi.com"
+      },
     ],
   },
 }
