@@ -1,73 +1,106 @@
 [
   {
-    "productId": 1,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
+    "id": 1,
+    "title": "Product Test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/92899031/3896719202.jpg",
+    "price": 1500,
+    "discount": 5,
+    "category": 1500,
+    "stock": 15,
+    "rating": {
+      "rate": 3.9,
+      "vote": 999
+    }
   },
+
   {
-    "productId": 2,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
+    "id": 2,
+    "title": "Product Test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/92899031/3896737268.jpg",
+    "price": 1500,
+    "discount": 5,
+    "category": 1500,
+    "stock": 15,
+    "rating": {
+      "rate": 3.9,
+      "vote": 999
+    }
   },
+
   {
-    "productId": 3,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
+    "id": 3,
+    "title": "Product Test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/92899031/3896719138.jpg",
+    "price": 1500,
+    "discount": 5,
+    "category": 1500,
+    "stock": 15,
+    "rating": {
+      "rate": 3.9,
+      "vote": 999
+    }
   },
+
   {
-    "productId": 4,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
+    "id": 4,
+    "title": "Product Test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/92899031/3896684749.jpg",
+    "price": 1500,
+    "discount": 5,
+    "category": 1500,
+    "stock": 15,
+    "rating": {
+      "rate": 3.9,
+      "vote": 999
+    }
   },
+
   {
-    "productId": 5,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
+    "id": 5,
+    "title": "Product Test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/92899031/3896684557.jpg",
+    "price": 1500,
+    "discount": 5,
+    "category": 1500,
+    "stock": 15,
+    "rating": {
+      "rate": 3.9,
+      "vote": 999
+    }
   },
+
   {
-    "productId": 6,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
+    "id": 6,
+    "title": "Product Test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/92899031/3945541289.jpg",
+    "price": 1500,
+    "discount": 5,
+    "category": 1500,
+    "stock": 15,
+    "rating": {
+      "rate": 3.9,
+      "vote": 999
+    }
   },
+
   {
-    "productId": 7,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
-  },
-  {
-    "productId": 8,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500
-  },
-  {
-    "productId": 9,
-    "productName": "Product Test",
-    "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "productImage": "/assets/images/test.jpg",
-    "productPrice": 1500,
-    "productDiscountPercentage": 20
+    "id": 7,
+    "title": "Product Test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/92899031/3896719140.jpg",
+    "price": 1500,
+    "discount": 5,
+    "category": 1500,
+    "stock": 15,
+    "rating": {
+      "rate": 3.9,
+      "vote": 999
+    }
   }
 ]
