@@ -1,12 +1,26 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --color-couleur-primaire: #a7c7e7; /* Vert d'eau pastel */
+  --color-couleur-secondaire: #f5f5ef; /* Beige sable */
+  --color-couleur-accent-1: #f0809f; /* Rose poudré */
+  --color-couleur-accent-2: #f08080; /* Rose poudré */
+  --color-couleur-accent-3: #d3d3d3; /* Gris clair */
+  --color-couleur-accent-4: #8fbc8f; /* Vert sauge */
+  --color-couleur-accent-5: #3cb371; /* Gris clair */
+  --color-couleur-accent-6: #90EE90; /* Gris clair */
+
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
+
+  --color-add-to-cart: hsl(var(--add-to-cart));
+
+  --color-cta-red: hsl(var(--cta-red));
+  --color-cta-red-hover: hsl(var(--cta-red-hover));
 
   --color-card: hsl(var(--card));
   --color-card-foreground: hsl(var(--card-foreground));
@@ -89,18 +103,24 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
-}
-
-@layer utilities {
-  body {
-    font-family: Arial, Helvetica, sans-serif;
+  * {
+    @apply border-border;
   }
-}
+  body {
+    @apply bg-background text-foreground;
+  }
 
-@layer base {
   :root {
+    --couleur-primaire: #a7c7e7; /* Vert d'eau pastel */
+    --couleur-secondaire: #f5f5dc; /* Beige sable */
+    --couleur-accent-1: #f08080; /* Rose poudré */
+    --couleur-accent-2: #d3d3d3; /* Gris clair */
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
+    --add-to-cart: 0 0% 100%;
+    --cta-red: 357 96% 58%;
+    --cta-red-hover: 353 100% 35%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
@@ -136,6 +156,9 @@
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
+    --add-to-cart: 0 0% 100%;
+    --cta-red: 357 96% 58%;
+    --cta-red-hover: 353 100% 35%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
@@ -169,11 +192,8 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+@layer utilities {
   body {
-    @apply bg-background text-foreground;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
