@@ -11,8 +11,9 @@
   --color-couleur-accent-2: #f08080; /* Rose poudré */
   --color-couleur-accent-3: #d3d3d3; /* Gris clair */
   --color-couleur-accent-4: #8fbc8f; /* Vert sauge */
-  --color-couleur-accent-5: #3cb371; /* Gris clair */
+  --color-couleur-accent-5: #295229; /* Gris clair */
   --color-couleur-accent-6: #90EE90; /* Gris clair */
+  --color-couleur-accent-7: #9f3250; /* Rose poudré */
 
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
